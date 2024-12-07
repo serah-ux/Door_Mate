@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .btn {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Appointment Details</h2>
+        <p><strong>Name:</strong> {{ appointment.name }}</p>
+        <p><strong>Gender:</strong> {{ appointment.gender }}</p>
+        <p><strong>Date:</strong> {{ appointment.date }}</p>
+        <p><strong>Time:</strong> {{ appointment.time }}</p>
+        <p><strong>Email:</strong> {{ appointment.email }}</p>
+        <p><strong>Message:</strong> {{ appointment.message }}</p>
+        <button class="btn" onclick="window.print()">Print</button>
+    </div>
+</body>
+</html>

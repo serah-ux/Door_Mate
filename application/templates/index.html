@@ -1,0 +1,171 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block title %}
+Home
+{% endblock %} 
+{% block content  %}
+
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>DoorMate</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+
+
+     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'assets/img/house_cleaning.jpg' %}" class="d-block w-100" alt="..." height="700px">
+        <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; font-size: 24px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
+            <b>Doormate offers available handy jobs</b>
+    </h1>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'assets/img/plumbing.jpg' %}" class="d-block w-100" alt="..." height="700px">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'assets/img/online_instructor.jpg' %}" class="d-block w-100" alt="..." height="700px">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<
+{#    <!-- Testimonials Section -->#}
+    <section class="testimonials-12 testimonials section" id="testimonials">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+          <h2>TESTIMONIALS</h2>
+          <p>Necessitatibus eius consequatur</p>
+      </div><!-- End Section Title -->
+
+      <div class="testimonial-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-md-4">
+              <div class="testimonial">
+                <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" alt="Testimonial author">
+                <blockquote>
+                  <p>
+                    “Doormate made finding a reliable housekeeper a breeze! Within hours, I connected with someone who perfectly met my requirements.
+                      It’s such a relief knowing I can trust the service providers. Highly recommend!"”
+                  </p>
+                </blockquote>
+                <p class="client-name">James Smith</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 mb-md-4">
+              <div class="testimonial">
+                <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" alt="Testimonial author">
+                <blockquote>
+                  <p>
+                    “I needed a plumber urgently for a pipe burst. Doormate connected me with a professional within minutes, and the problem was fixed the same day.
+                      Efficient, professional, and stress-free”
+                  </p>
+                </blockquote>
+                <p class="client-name">Kate Smith</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 mb-md-4">
+              <div class="testimonial">
+                <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" alt="Testimonial author">
+                <blockquote>
+                  <p>
+                    “Finding a private tutor for my daughter was such a challenge until I discovered Doormate. The tutor we hired through the platform has been amazing,
+                      and my daughter's grades have significantly improved”
+                  </p>
+                </blockquote>
+                <p class="client-name">Claire Anderson</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 mb-md-4">
+              <div class="testimonial">
+                <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" alt="Testimonial author">
+                <blockquote>
+                  <p>
+                    “I was looking for a chef to cater for a family event, and Doormate exceeded my expectations. The chef we hired was professional, skilled, and made
+                      our event unforgettable”
+                  </p>
+                </blockquote>
+                <p class="client-name">Dan Smith</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
+
+
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section light-background">
+
+      <div class="content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3>Subscribe To Our Newsletter</h3>
+              <p class="opacity-50">
+                Join thousands of users and get exclusive updates, tips, and offers delivered
+                  straight to your inbox.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <form action="forms/newsletter.php" class="form-subscribe php-email-form">
+                <div class="form-group d-flex align-items-stretch">
+                  <input type="email" name="email" class="form-control h-100" placeholder="Enter your e-mail">
+                  <input type="submit" class="btn btn-secondary px-4" value="Subcribe">
+                </div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your subscription request has been sent. Thank you!
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Call To Action Section -->
+
+  </main>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+ <!-- Vendor JS Files -->
+
+
+</body>
+
+</html>
+
+{% endblock %}
